@@ -15,8 +15,8 @@ const contentSecurityPolicy = [
     ? "connect-src 'self' http://localhost:* http://127.0.0.1:* ws://localhost:* ws://127.0.0.1:*"
     : "connect-src 'self'",
   process.env.NODE_ENV === "development"
-    ? "script-src 'self' 'unsafe-inline' 'unsafe-eval'"
-    : "script-src 'self' 'unsafe-inline'",
+  ? "connect-src 'self' https://vlmizleoxlpzzvnktppy.supabase.co wss://vlmizleoxlpzzvnktppy.supabase.co http://localhost:* http://127.0.0.1:* ws://localhost:* ws://127.0.0.1:*"
+  : "connect-src 'self' https://vlmizleoxlpzzvnktppy.supabase.co wss://vlmizleoxlpzzvnktppy.supabase.co",
 ].join("; ");
 
 const securityHeaders = [
