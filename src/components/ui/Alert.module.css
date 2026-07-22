@@ -1,0 +1,32 @@
+.alert {
+  display: grid;
+  gap: var(--space-1);
+  padding: var(--space-4);
+  border: 1px solid currentcolor;
+  border-radius: var(--radius-control);
+}
+
+.alert div {
+  color: var(--color-text);
+}
+
+.info {
+  color: var(--color-info);
+  background: var(--color-info-surface);
+}
+
+.success {
+  color: var(--color-success);
+  background: var(--color-surface-subtle);
+}
+
+.warning {
+  color: var(--color-text);
+  background: var(--color-accent-surface);
+}
+
+.error {
+  color: var(--color-error);
+  background: var(--color-surface);
+}
+

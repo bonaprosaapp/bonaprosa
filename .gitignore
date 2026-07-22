@@ -1,0 +1,28 @@
+# Dependências
+/node_modules/
+
+# Pacote-fonte local já consolidado em AGENTS.md, docs/ e templates/
+/Bona-Prosa-Instrucoes-Codex/
+
+# Next.js
+/.next/
+/out/
+
+# Testes
+/coverage/
+
+# Arquivos locais e segredos
+.env*
+!.env.example
+
+# Supabase local
+/supabase/.branches/
+/supabase/.temp/
+
+# Logs e sistema operacional
+*.log
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo

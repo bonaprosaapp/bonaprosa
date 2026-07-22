@@ -1,0 +1,72 @@
+:root {
+  color-scheme: light;
+
+  /* Paleta oficial da marca */
+  --brand-green-100: #e8f4ec;
+  --brand-green-500: #4e9f70;
+  --brand-green-700: #2f6f4e;
+  --brand-blue-100: #eaf1fa;
+  --brand-blue-500: #3566a8;
+  --brand-yellow-100: #fff7d6;
+  --brand-yellow-500: #f2c94c;
+  --neutral-white: #ffffff;
+  --neutral-page: #f7f8f6;
+  --neutral-text: #26332b;
+  --neutral-text-muted: #68736d;
+  --neutral-border: #dde5e0;
+  --feedback-error: #c94a4a;
+  --feedback-success: #3d8b5f;
+
+  /* Cores semânticas */
+  --color-page: var(--neutral-page);
+  --color-surface: var(--neutral-white);
+  --color-surface-subtle: var(--brand-green-100);
+  --color-text: var(--neutral-text);
+  --color-text-muted: var(--neutral-text-muted);
+  --color-border: var(--neutral-border);
+  --color-brand-primary: var(--brand-green-500);
+  --color-brand-strong: var(--brand-green-700);
+  --color-action-primary: var(--brand-green-700);
+  --color-action-primary-hover: var(--neutral-text);
+  --color-action-secondary: var(--brand-blue-500);
+  --color-on-action: var(--neutral-white);
+  --color-info: var(--brand-blue-500);
+  --color-info-surface: var(--brand-blue-100);
+  --color-accent: var(--brand-yellow-500);
+  --color-accent-surface: var(--brand-yellow-100);
+  --color-error: var(--feedback-error);
+  --color-success-visual: var(--feedback-success);
+  --color-success: var(--brand-green-700);
+  --color-disabled: var(--neutral-border);
+  --color-focus: var(--brand-blue-500);
+
+  /* Tipografia */
+  --font-sans: "Inter Variable", Inter, Arial, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --font-size-xs: 0.875rem;
+  --font-size-sm: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: clamp(1.5rem, 3vw, 2rem);
+  --font-size-display: clamp(2rem, 5vw, 3.5rem);
+  --line-height-tight: 1.15;
+  --line-height-body: 1.55;
+
+  /* Espaçamento */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* Forma e elevação */
+  --radius-control: 0.75rem;
+  --radius-card: 1.25rem;
+  --radius-pill: 999px;
+  --shadow-card: 0 1rem 3rem rgb(47 111 78 / 10%);
+  --focus-ring: 0 0 0 3px var(--color-page), 0 0 0 6px var(--color-focus);
+  --content-max-width: 75rem;
+  --control-min-size: 2.75rem;
+}

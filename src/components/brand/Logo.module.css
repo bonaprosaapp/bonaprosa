@@ -1,0 +1,12 @@
+.logo {
+  display: inline-flex;
+  width: clamp(10rem, 32vw, 12.5rem);
+  background: var(--color-surface);
+  border-radius: var(--radius-control);
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
