@@ -11,14 +11,16 @@ Camadas:
 3. regras do produto;
 4. integrações e infraestrutura.
 
-## Estado atual da fundação
+## Estado atual
 
-A Etapa 0 inicia diretamente em `src/`, sem migrar a landing monolítica de inspiração. Foram materializadas somente áreas com responsabilidade atual:
+A aplicação usa uma única árvore do App Router em `src/app`. A landing que
+estava em `app/` na raiz foi incorporada à estrutura canônica para evitar duas
+fontes concorrentes de rotas e configurações.
 
-- `src/app`: layout, rota temporária, loading, not found e limites globais de erro;
+- `src/app`: landing page, entrada, dashboard, loading, not found e limites globais de erro;
 - `src/components`: componentes base, marca e estados compartilhados;
-- `src/content`: conteúdo da tela temporária separado da rota;
-- `src/integrations/supabase`: contrato e limites documentados, ainda sem cliente de aplicação;
+- `src/content`: conteúdo compartilhado separado das rotas;
+- `src/integrations/supabase`: cliente inicial de autenticação e perfil;
 - `src/server/observability`: logger estruturado com lista de campos permitidos, acionado por `src/instrumentation.ts` em erros não tratados no servidor;
 - `src/styles`: tokens oficiais, reset, utilitários e movimento reduzido;
 - `supabase`: configuração local e migration inicial de `profiles`.
@@ -58,7 +60,8 @@ src/
 └── styles/          # tokens, reset e utilitários
 ```
 
-Se o projeto atual ainda usa `app/` na raiz, não mover tudo em uma única tarefa. A migração para `src/` pode ocorrer gradualmente quando trouxer benefício concreto.
+Novas rotas e funcionalidades devem continuar em `src/`. Não recriar uma
+segunda pasta `app/` na raiz.
 
 ## Dependências permitidas entre camadas
 

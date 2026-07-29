@@ -1,5 +1,20 @@
 # Changelog
 
+## 28 de julho de 2026
+
+### Código
+
+- incorporada a landing page à árvore canônica `src/app`;
+- removida a árvore duplicada `app/` da raiz;
+- corrigido o alias `@/*` para resolver módulos dentro de `src/`;
+- restaurados os scripts e as dependências de typecheck, lint e testes;
+- alinhados `package.json`, lockfile, README e documentação de arquitetura;
+- corrigido o build de produção executado pela Vercel.
+
+### Verificação
+
+- typecheck, lint, testes unitários e build de produção executados localmente.
+
 ## 18 de julho de 2026
 
 ### Documentação

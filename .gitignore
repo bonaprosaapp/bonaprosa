@@ -1,8 +1,12 @@
-node_modules
-.next
-out
-.env
-.env.*
+node_modules/
+.next/
+out/
+coverage/
+.env*
 !.env.example
+supabase/.branches/
+supabase/.temp/
 *.log
+*.tsbuildinfo
 .DS_Store
+Thumbs.db
