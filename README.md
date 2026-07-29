@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bona Prosa
 
 Plataforma web de assinatura para o desenvolvimento de oratória, dicção, vocabulário e comunicação em português brasileiro.
@@ -51,3 +52,24 @@ npm run db:test
 - `templates`: modelos de tarefa e especificação de tela.
 
 Leia [AGENTS.md](./AGENTS.md) e [docs/00_START_HERE.md](./docs/00_START_HERE.md) antes de alterar o projeto.
+=======
+# Bona Prosa — Landing Page
+
+Landing page independente do Bona Prosa, reconstruída em Next.js.
+
+## Executar
+
+```bash
+npm install
+npm run dev
+```
+
+Abra `http://localhost:3000`.
+
+## Publicar no GitHub
+
+Extraia o ZIP e copie estes arquivos para a raiz do repositório oficial. Não
+envie o ZIP como um único arquivo.
+
+O projeto não usa APIs, SDKs ou dependências do ChatGPT/OpenAI.
+>>>>>>> 8097fa0 (Atualização da Landing Page)

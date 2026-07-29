@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 
+<<<<<<< HEAD
 const contentSecurityPolicy = [
   "default-src 'self'",
   "base-uri 'self'",
@@ -40,6 +41,11 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+=======
+const nextConfig: NextConfig = {
+  reactStrictMode: true,
+  output: "export",
+>>>>>>> 8097fa0 (Atualização da Landing Page)
 };
 
 export default nextConfig;
