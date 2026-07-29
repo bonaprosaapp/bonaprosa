@@ -19,7 +19,7 @@ export default function HomePage() {
             Esta tela temporária confirma a estrutura técnica do produto. A
             landing page completa será construída na próxima etapa.
           </p>
-          <div className={styles.actions}><ButtonLink href="/entrar">Começar agora</ButtonLink><ButtonLink href="#fundacao" variant="secondary">Conhecer a base</ButtonLink></div>
+          <ButtonLink href="#fundacao">Ver o que já está preparado</ButtonLink>
         </div>
 
         <BonoMascot mood="relaxed" className={styles.mascot} priority />
